@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
+    <title>Portfolio</title>
+</head>
+
+<body>
+    <nav id="nav" class="navigation flex">
+        <h3>Lipka Valentin</h3>
+        <ul class="flex navbar">
+            <li><a id="homeLink" href="#home">Accueil</a></li>
+            <li><a id="skillLink" href="#skill">Skill</a></li>
+            <li><a id="projetsLink" href="#projets">Projets</a></li>
+            <li><a id="contactLink" href="">Contact</a></li>
+            <li><ion-icon id="light" name="sunny-outline"></ion-icon></li>
+        </ul>
+    </nav>
+    <!-- particles.js container -->
+    <div id="particles-js"></div> <!-- stats - count particles -->
+    <!-- particles.js lib - https://github.com/VincentGarreau/particles.js -->
+    <script src="http://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script> <!-- stats.js lib -->
+    <script src="http://threejs.org/examples/js/libs/stats.min.js"></script>
+    <div id="menu">
+        <div></div>
+    </div>
+    <div class="scroll">
+        <section class="header accueil container flex" id="home">
+            <img class="bg" src="./assets/img/grossetête.png" height="150" alt="">
+            <div class="headerText">
+                <p class="bjr">Bonjour, je m'appelle</p>
+                <h1 id="textBonjour">LIPKA VALENTIN</h1>
+                <h3>Développeur Web Front-End</h3>
+                <p class="color2 infos">
+                    Je m'appelle Valentin, j'ai 21 ans et je suis actuellement en formation à WebForce3 pour devenir
+                    développeur web front-end.
+                    <br>
+                    J'aime toucher à tout et être autonome sur les projets que l'on me confie.
+                    <br>
+                    <br>
+                    Je suis passionné par le développement web et j'aime travailler sur des projets qui me
+                    permettent de mettre en pratique mes compétences et de m'améliorer constamment.
+                </p>
+                <a href="#projets" class="button flex">Voir mes projets <ion-icon
+                        name="arrow-forward-outline"></ion-icon></a>
+            </div>
+        </section>
+        <section id="skill" class="skill container">
+            <h2 class="color1">Skill</h2>
+            <div class="cards flex">
+                <div class="card flex">
+                    <img src="./assets/img/html.png" alt="">
+                    <p>HTML</p>
+                </div>
+                <div class="card flex">
+                    <img src="./assets/img/CSS.png" alt="">
+                    <p>CSS</p>
+                </div>
+                <div class="card flex">
+                    <img src="./assets/img/JAVASCRIPT.png" alt="">
+                    <p>JAVASCRIPT</p>
+                </div>
+            </div>
+        </section>
+        <section id="projets" class="projets container">
+            <h2 class="color1">Mes projets</h2>
+            <div class="projets-cards flex">
+                <div class="projet-card flex" id="morpion">
+                    <img src="./assets/img/morpion.png" height="200" alt="">
+                    <p>Morpion</p>
+                    <a href="#projets" class="button flex morpion" onclick="openPopup()">Accéder<ion-icon name="arrow-forward-outline"></ion-icon></a>
+                </div>
+                <div class="card-project" id="popup">
+                    <ion-icon name="close-circle-outline" class="fermer" onclick="closePopup()"></ion-icon>
+                    <h1>Morpion</h1>
+                    <img src="./assets/img/morpion.png" alt="" height="200px">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo cupiditate, consequatur illum debitis esse
+                        consequuntur obcaecati! Incidunt consectetur cum unde ducimus neque, dolorum obcaecati error rem impedit
+                        repellendus, soluta ad.</p>
+                    <div class="infos">
+                        <div>
+                            Date : Février 2023
+                        </div>
+                        <div class="techno">
+                            <h5>Technologies utilisées : </h5>
+                            <img src="./assets/img/HTML.png" alt="" height="50px">
+                            <img src="./assets/img/CSS.png" alt="" height="50px">
+                            <img src="./assets/img/JAVASCRIPT.png" alt="" height="50px">
+                        </div>
+                        <a class="button flex">Visiter le site</a>
+                    </div>
+                </div>
+                <div class="projet-card flex">
+                    <img src="./assets/img/todolist.png" height="200" alt="">
+                    <p>To Do List</p>
+                    <a href="./todolist/index.html" class="button flex">Accéder<ion-icon
+                            name="arrow-forward-outline"></ion-icon></a>
+                </div>
+                <div class="projet-card flex">
+                    <img src="./assets/img/morpion.png" height="200" alt="">
+                    <p>Morpion</p>
+                    <a href="#projets" class="button flex">Accéder<ion-icon name="arrow-forward-outline"></ion-icon></a>
+                </div>
+            </div>
+        </section>
+        <section id="contact" class="contact container">
+            <h2 class="color1">Contact</h2>
+        </section>
+    </div>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script src="./assets/js/script.js"></script>
+</body>
+
+</html>
