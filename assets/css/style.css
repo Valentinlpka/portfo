@@ -495,6 +495,10 @@ section, .contact {
   font-size: 1.3rem;
 }
 
+.light .competences {
+color:#7f8897
+}
+
 .skilla {
   display:flex;
   gap:20rem;
@@ -621,8 +625,8 @@ section, .contact {
   }
 
   .light .card {
-    color: #d8ddef;
-    background-color: #0a192f;
+    color: #0a192f;
+    background-color: #d8ddef66;
   }
 
 footer{
@@ -632,12 +636,17 @@ footer{
   border-top: 1px solid #95a899;
   color:#d8ddef;
 } 
+
+
 footer a {
   color:#d8ddef
 }
 footer a:hover {
   animation: .3s;
   color:#95a899;
+}
+.light footer p {
+  color:#0a192f
 }
 
 
@@ -693,7 +702,8 @@ border:1px solid #d8ddef;
 }
 
 .light .card-contact {
-  border-color:#0a192f
+  border-color:#0a192f;
+  color:#2e3d62
 }
 
 .card-contact p {
