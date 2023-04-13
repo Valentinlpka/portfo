@@ -735,6 +735,26 @@ border:1px solid #d8ddef;
 
 @media (max-width: 768px) {
 
+  nav h3 {
+    display:none;
+  }
+
+  .infos {
+    max-width: 371px;
+  }
+  .container {
+    max-width: 700px;
+  }
+
+  body {
+    overflow-x: hidden;
+  }
+
+  .skilla {
+    display: flex;
+    gap: 3rem;
+    flex-wrap: wrap;}
+
   .moving-mouse-holder {
 
     margin-top:0px;
