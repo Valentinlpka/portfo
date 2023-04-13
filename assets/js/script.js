@@ -32,7 +32,7 @@ var typewriter = new Typewriter(app, {
 
 typewriter
   .pauseFor(900)
-  .typeString("LIPKA VALENTIN")
+  .typeString("VALENTIN LIPKA")
   .start();
 
 

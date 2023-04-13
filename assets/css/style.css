@@ -120,7 +120,6 @@ section {
 body {
   line-height: 1;
   scroll-behavior: smooth;
-  padding-left: 20px;
 }
 
 ol,
@@ -177,13 +176,12 @@ body {
 }
 
 h2 {
+  padding-bottom: 100px;
+  text-align: center;
   font-size: 3rem;
-  text-decoration: underline;
+  /* text-decoration: underline;
   text-decoration-color: #95a899;
-  text-underline-offset: 1.2rem;
-  margin-bottom: 25px;
-  padding-top: 6rem;
-  padding-bottom: 1.5rem;
+  text-underline-offset: 1.2rem; */
 }
 
 .container {
@@ -200,7 +198,7 @@ h2 {
 .navigation {
   color: #ffffff;
   justify-content: space-between;
-  padding: 2rem;
+  padding: 1.5rem;
   position: fixed;
   right: 0;
   left: 0;
@@ -347,19 +345,24 @@ a {
   min-height: 100vh;
 }
 
+
+.headerText{
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
 .light .header {
   color: #2e3d62;
 }
 
 .header .bjr {
   animation: title 1s ease 0s 1 normal forwards;
-  padding-bottom: 15px;
   color: #95a899;
+  font-size:1.4rem;
 }
 
 .infos {
-  padding-top: 15px;
-  padding-bottom:25px;
 font-size: 1.3rem;
 line-height: 1.5;
 }
@@ -378,7 +381,6 @@ line-height: 1.5;
 }
 
 .header h1 {
-  padding-bottom: 15px;
   font-size: 4.5rem;
   color: #d8ddef;
   font-weight: bold;
@@ -392,9 +394,29 @@ line-height: 1.5;
 .header h3 {
   font-size: 1.3rem;
   color: #a0a4b8;
-  padding-bottom: 15px;
 }
 
+.mention {
+  color:#d8ddef;
+  font-size:2rem
+}
+
+.val {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap:5rem
+}
+
+.legal {
+  max-width: 1200px;
+  color:#a0a4b8;
+  line-height: 3rem;
+}
+
+section, .contact {
+  min-height: 65vh !important;
+}
 /* -- Fin du header -- */
 
 
@@ -403,35 +425,35 @@ line-height: 1.5;
   justify-content: center;
   align-items: center;
   gap: 0.3rem;
-  width: 200px;
-  height: 40px;
-  font-size: 1rem;
+  width: 250px;
+  height: 50px;
+  font-size: 1.2rem;
   font-weight: 400;
-  border: 1px solid white;
-  border-radius: 0.2rem;
-  background: transparent;
+  border-radius: 5px;
   color: white;
+  background: #95a899;
+  border-color: #95a899;
+  border: 1px solid #95a899
 }
 
 .light .button {
-  color: #2e3d62;
-  border-color: #2e3d62;
+  color: #ffffff;
+  border-color: #ffffff;
 }
 
 .button:hover {
   transition: 0.3s;
   cursor: pointer;
-  color: white;
-  background: #95a899;
-  border-color: #95a899;
+  background: none;
+  color: #95a899;
+  border: 1px solid #95a899;
+
 }
 
 /* -- Fin du Bouton -- */
 
 
 .a-propos {
-  min-width: 100vh;
-  padding-top: 50px;
   flex-direction: column;
   gap: 1.5rem;
 }
@@ -444,20 +466,41 @@ line-height: 1.5;
 .card {
   flex-direction: column;
   text-align: center;
-  color: #a0a4b8;
+  color: #0a192f;
   gap: 1rem;
-  -webkit-box-shadow: 0px 3px 8px 2px rgba(0, 0, 0, 0.64);
-  box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.64);
-  padding: 10px 20px;
+  background-color: #7f8897;
+  padding: 15px 30px;
+  border-radius: 5px;
 }
 
 .card img {
-  height: 100px;
+  height: 80px;
 }
 
 .cards {
+  gap:3rem;
+  justify-content: space-between;
+}
+
+.competences {
+  gap:2rem;
+  color:#d8ddef;
+  display:flex;
+  flex-direction: column;
   justify-content: center;
-  gap: 10rem;
+  align-items: center;
+}
+
+.competences h3 {
+  font-size: 1.3rem;
+}
+
+.skilla {
+  display:flex;
+  gap:20rem;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 5rem;
 }
 
 .projet-card {
@@ -562,7 +605,146 @@ line-height: 1.5;
       gap:5rem
   }
 
+  section {
+    min-height:90vh;
+    width: 100vw;
+    padding-top:120px;
+    padding-bottom:50px;
+  }
+
+  #home {
+    padding-top:0px ;
+  }
+
+  .skills {
+    color:#d8ddef
+  }
+
+  .light .card {
+    color: #d8ddef;
+    background-color: #0a192f;
+  }
+
+footer{
+  display: flex;
+  justify-content: center;
+  padding:20px;
+  border-top: 1px solid #95a899;
+  color:#d8ddef;
+} 
+footer a {
+  color:#d8ddef
+}
+footer a:hover {
+  animation: .3s;
+  color:#95a899;
+}
+
+
+.moving-mouse-holder {
+  margin: auto;
+  margin-top: -150px;
+  width: 1200px;
+  display: flex;
+  gap:2rem;
+  align-items: center;
+}
+
+.moving-mouse-holder .mouse {
+  width: 26px;
+  height: 40px;
+  position: relative;
+  right: 0;
+  border-radius: 18px;
+  border: 2px solid #d8ddef;
+}
+
+.moving-mouse-holder .mouse-button {
+  background-color: #d8ddef;
+  width: 4px;
+  height: 10px;
+  border-radius: 2px;
+  position: absolute;
+  top: 10px;
+  left: 50%;
+  margin: 0 0 0 -2px;
+  animation: mouse-scroll 1s infinite alternate;
+}
+
+.moving-mouse-holder .text {
+  color: #a0a4b8;
+  font-size: 16px;
+  line-height: 1em;
+}
+
+.card-contact {
+  color:#d8ddef;
+  position: relative;
+height: auto;
+width: 150px;
+padding: 40px 50px 40px 50px;
+border-radius: 5px;
+border:1px solid #d8ddef;
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  font-size:1.2rem
+}
+
+.light .card-contact {
+  border-color:#0a192f
+}
+
+.card-contact p {
+  font-size: 1rem;
+  color:#7f8897
+}
+
+.card-contact ion-icon {
+  background-color:#0a192f;
+  padding:15px;
+  border-radius: 50%;
+  color:#d8ddef;
+  position:absolute;
+  border:#d8ddef 1px solid;
+  top:-40%;
+  font-size:2.6rem
+}
+
+.light .card-contact ion-icon {
+  color:#0a192f;
+  background-color:#ffffff;
+  border-color:#0a192f
+}
+
+
+
+.allcards-contact {
+  display: flex;
+  padding-top:5rem;
+  justify-content: space-between;
+}
+
+@keyframes mouse-scroll {
+  to {
+    transform: translate(0, 6px) scale(1, 0.8);
+  }
+}
+
+
 @media (max-width: 768px) {
+
+  .moving-mouse-holder {
+
+    margin-top:0px;
+  }
+
+  .allcards-contact {
+    justify-content: center;
+    gap:5rem;
+    flex-wrap: wrap;
+  }
   .navigation {
     position: fixed;
     top: 0;
@@ -661,4 +843,6 @@ line-height: 1.5;
   .projets h2 {
     padding-top: 15px;
   }
+
+
 }
